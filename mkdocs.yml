@@ -1,0 +1,103 @@
+# Copyright 2018 ConsenSys AG.
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
+# the License. You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+# an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+# specific language governing permissions and limitations under the License.
+
+# Project information
+site_name: Trident
+site_url: https://sambacha.github.io/mkdocs-trident
+site_description: Trident documentation.
+site_author: SushiSwap community
+copyright: SushiSwap Trident and its documentation are licensed under GPL-3.0 license /
+
+#extra project info and template customisation
+extra:
+#  doc_site_edit_url: https://github.com/hyperledger/besu-docs/
+  latest_version_warning:
+    url_contains: /latest/
+    text: 'You are reading the development version documentation and
+    some displayed features may not be available in the stable release.
+    You can switch to stable version using the version box at screen bottom.'
+  support:
+    chat: #
+    email: #
+    website: #
+    issues: #
+    doc_issues: #
+  google:
+    site_verification:
+      - ''
+    tag_manager: ''
+  logo_regular: logo.svg
+  logo_reversed: &logo_reversed logo-reversed.svg
+
+# Repository
+repo_name: sambacha/mkdocs-trident
+repo_url: https://github.com/sambacha/mkdocs-trident
+
+theme:
+    name: material
+    custom_dir: custom_theme
+    palette:
+        primary: blue-grey
+        accent: teal
+    favicon: favicon.svg
+    logo: *logo_reversed
+
+extra_css:
+  - assets/stylesheets/custom_theme.css
+  - assets/stylesheets/zoomify.min.css
+extra_javascript:
+  - assets/javascripts/custom_theme.js
+  - assets/javascripts/zoomify.min.js
+
+markdown_extensions:
+    - toc:
+        permalink: 
+        toc_depth: 3
+    - codehilite
+    - pymdownx.tabbed
+    - pymdownx.superfences
+    - markdown_include.include:
+        base_path: docs
+    - admonition
+    - footnotes
+    - def_list
+    - abbr
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.keys
+    - pymdownx.details
+    - pymdownx.emoji
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+    - meta
+    - smarty
+    - attr_list
+
+plugins:
+    - search:
+        lang: 'en'
+        separator: '[\s\-\.\_]+'
+    - markdownextradata
+    - exclude:
+        glob:
+          - global/*
+    - git-revision-date-localized:
+        locale: en
+#    - minify:
+#        minify_html: true
+#        minify_js: true
+#        htmlmin_opts:
+#          remove_comments: true
