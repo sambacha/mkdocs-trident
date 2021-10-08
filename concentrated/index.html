@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://sambacha.github.io/mkdocs-trident/config/">
+        <link rel="canonical" href="https://sambacha.github.io/mkdocs-trident/concentrated/">
       
       
         <meta name="author" content="SushiSwap community">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Config - Trident</title>
+        <title>Concentrated Liquidity Pools - Trident</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config" class="md-skip">
+        <a href="#concentrated-liquidity-pools" class="md-skip">
           Skip to content
         </a>
       
@@ -151,7 +151,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Config
+              Concentrated Liquidity Pools
             
           </span>
         </div>
@@ -300,28 +300,6 @@
   
 
 
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
-    <label class="md-nav__link" for="nav-3">
-      Config
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Config" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon"></span>
-        Config
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
@@ -330,12 +308,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Config
+        Concentrated Liquidity Pools
         <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      Config
+      Concentrated Liquidity Pools
     </a>
     
       
@@ -348,15 +326,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#foo" class="md-nav__link">
-    foo
+  <a href="#representing-global-liquidity-state" class="md-nav__link">
+    Representing global liquidity state
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bar" class="md-nav__link">
-    bar
+  <a href="#trading" class="md-nav__link">
+    Trading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fee-accrual" class="md-nav__link">
+    Fee accrual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pool-manager" class="md-nav__link">
+    Pool Manager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-state-variables" class="md-nav__link">
+    Key state variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staking" class="md-nav__link">
+    Staking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formulas" class="md-nav__link">
+    Formulas
   </a>
   
 </li>
@@ -365,11 +378,6 @@
   
 </nav>
     
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -468,60 +476,11 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
     <label class="md-nav__link" for="nav-6">
-      Guide
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Guide" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        <span class="md-nav__icon md-icon"></span>
-        Guide
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../guide/" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../guide/using-vue/" class="md-nav__link">
-      Using Vue in Markdown
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
-    <label class="md-nav__link" for="nav-7">
       Interfaces
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Interfaces" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon"></span>
         Interfaces
       </label>
@@ -624,13 +583,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
-    <label class="md-nav__link" for="nav-8">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
+    <label class="md-nav__link" for="nav-7">
       Libraries
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Libraries" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
+      <label class="md-nav__title" for="nav-7">
         <span class="md-nav__icon md-icon"></span>
         Libraries
       </label>
@@ -661,6 +620,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../libraries/TridentMath/" class="md-nav__link">
+      Trident
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -673,13 +644,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
-    <label class="md-nav__link" for="nav-9">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+    <label class="md-nav__link" for="nav-8">
       Mocks
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Mocks" data-md-level="1">
-      <label class="md-nav__title" for="nav-9">
+      <label class="md-nav__title" for="nav-8">
         <span class="md-nav__icon md-icon"></span>
         Mocks
       </label>
@@ -734,13 +705,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" >
-    <label class="md-nav__link" for="nav-10">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
+    <label class="md-nav__link" for="nav-9">
       Pool
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Pool" data-md-level="1">
-      <label class="md-nav__title" for="nav-10">
+      <label class="md-nav__title" for="nav-9">
         <span class="md-nav__icon md-icon"></span>
         Pool
       </label>
@@ -850,13 +821,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10-9" type="checkbox" id="nav-10-9" >
-    <label class="md-nav__link" for="nav-10-9">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9-9" type="checkbox" id="nav-9-9" >
+    <label class="md-nav__link" for="nav-9-9">
       Franchised
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Franchised" data-md-level="2">
-      <label class="md-nav__title" for="nav-10-9">
+      <label class="md-nav__title" for="nav-9-9">
         <span class="md-nav__icon md-icon"></span>
         Franchised
       </label>
@@ -940,13 +911,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" >
-    <label class="md-nav__link" for="nav-11">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" >
+    <label class="md-nav__link" for="nav-10">
       Utils
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Utils" data-md-level="1">
-      <label class="md-nav__title" for="nav-11">
+      <label class="md-nav__title" for="nav-10">
         <span class="md-nav__icon md-icon"></span>
         Utils
       </label>
@@ -989,13 +960,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" >
-    <label class="md-nav__link" for="nav-12">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" >
+    <label class="md-nav__link" for="nav-11">
       workInProgress
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="workInProgress" data-md-level="1">
-      <label class="md-nav__title" for="nav-12">
+      <label class="md-nav__title" for="nav-11">
         <span class="md-nav__icon md-icon"></span>
         workInProgress
       </label>
@@ -1064,15 +1035,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#foo" class="md-nav__link">
-    foo
+  <a href="#representing-global-liquidity-state" class="md-nav__link">
+    Representing global liquidity state
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bar" class="md-nav__link">
-    bar
+  <a href="#trading" class="md-nav__link">
+    Trading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fee-accrual" class="md-nav__link">
+    Fee accrual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pool-manager" class="md-nav__link">
+    Pool Manager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-state-variables" class="md-nav__link">
+    Key state variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staking" class="md-nav__link">
+    Staking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formulas" class="md-nav__link">
+    Formulas
   </a>
   
 </li>
@@ -1114,24 +1120,114 @@
 <div class="md-source-date">
   <small>
     
-      Last update: September 30, 2021
+      Last update: October 2, 2021
     
   </small>
 </div>
     
   
   
-  <h1 id="config">Config<a class="headerlink" href="#config" title="Permanent link"></a></h1>
-<h2 id="foo">foo<a class="headerlink" href="#foo" title="Permanent link"></a></h2>
+  <h1 id="concentrated-liquidity-pools">Concentrated Liquidity Pools<a class="headerlink" href="#concentrated-liquidity-pools" title="Permanent link"></a></h1>
+<p>Concentrated liquidity pools are a generalization of the traditional <code>xy = k</code> pool. With the traditional model all users provide liquidity on a <code>(0, inf)</code> price range where as in concentrated liquidity pools each user can pick their own range to provide liquidity on.
+This allows users to narrow down the liquidity provision range which amplifies their liquidity - meaning traders experience lesser price impact and liquidity providers accrue more fees. The biggest tradeoff being liquidity providers experience greater impermanent loss.</p>
+<p><img alt="Regular liquidity positions" src="https://raw.githubusercontent.com/sushiswap/trident/concentrated/pictures/regularLiquidity.png" /></p>
+<p><img alt="Concentrated liquidity positions" src="https://raw.githubusercontent.com/sushiswap/trident/concentrated/pictures/concentratedLiquidity.png" /></p>
+<h2 id="representing-global-liquidity-state">Representing global liquidity state<a class="headerlink" href="#representing-global-liquidity-state" title="Permanent link"></a></h2>
+<p>We represent the state of a pool&rsquo;s liquidity by using a linked list which starts at price 0 and ends at infinity. For every new position we insert two elements into the linked list based on the range&rsquo;s start and end price. To make the list more managable we limit the prices of the range to be some power of <code>1.0001</code>. E.g. our range can start at tick zero with a price of one <code>1.0000 = 1.0001^0</code> and end at tick 23028 which corresponds roughly to a price of ten. <code>10.0010 = 1.0001^23028</code>. With this approach we can cover the whole <code>(0, inf)</code> price range by using just <code>int24</code> as the exponent type.</p>
+<p>The linked list is represented by a <code>int24 =&gt; Tick</code> mapping where the Tick struct holds a pointer to the previous and the next tick and the liquidity added amount amongst other things.</p>
+<blockquote>
+<p>We add a requierment that each position must start on an even and end on an odd tick. When we cross a tick this tells us weather we need to increase or decrease the current liquidity.</p>
+</blockquote>
+<h2 id="trading">Trading<a class="headerlink" href="#trading" title="Permanent link"></a></h2>
+<p>Based on the <strong>liquidity</strong> variable wich tracks the current liquidity we can calculate the output and price impact of a trade. If the new price would cross into a new liquidity position or exit one we need to swap in steps instead.</p>
+<p>For the first step we use the <strong>nearestTick</strong> variable to calculate the price of the next initialised tick that we are crossing. Based on the difference betwen this price and the current price we can calculate the swap amounts for the first step.</p>
+<p>We then update the current price and current liquidity variables based on the tick that we just crossed and move the nearestTick pointer to the next one.</p>
+<p>We repeat this step untill we use up all of the swap input amount.</p>
+<h2 id="fee-accrual">Fee accrual<a class="headerlink" href="#fee-accrual" title="Permanent link"></a></h2>
+<p>Pool may be trading inside and outside of a given position. To calcualte fees belonging to a specific position we keep track of a couple of counters.</p>
+<p>We store a <strong>feeGrowthGlobal</strong> accumulator which increases on every swap step by the swap fee amount divided by the current liquidity <code>feeGrowthGlobal += feeAmount / currentLiquidity</code>.
+Every tick also keeps track of it&rsquo;s own <strong>feeGrowthOutside</strong> accumulator. This stores the fee growth that has happened on the side of the tick where trading isn&rsquo;t currently happening. It is updated each time the tick is crossed: <code>feeGrowthOutside = feeGrowthGlobal - feeGrowthOutside</code>.</p>
+<p>Using the <code>feeGrowthGlobal</code> and <code>feeGrowthOutside</code> variables we can calculate the feeGrowth that has happened above or below any specific tick.</p>
+<p>Using the <code>feeGrowthAbove</code> of a range&rsquo;s upper tick and the <code>feeGrowthBelow</code> of the range&rsquo;s lower tick we can calculate the current fee growth of a position by subtracting both values from the current <code>feeGrowthGlobal</code>. When a user adds a position a snapshot of this value is stored in the <strong>feeGrowthInsideLast</strong> variable. When the user wants to claim their fees a new <code>feeGrowthInsideLast</code> value is calculated. Multipliying the difference between the new and the old value with the position&rsquo;s liquidity gives us the fees belonging to the user.</p>
+<h2 id="pool-manager">Pool Manager<a class="headerlink" href="#pool-manager" title="Permanent link"></a></h2>
+<p>Users can chose for their liquidity position to be owned by the <code>ConcentratedLiquidityPoolManager</code> contract. Doing so will mint them an NFT position which will have the claim to the underlying tokens and to any accrued fees. The pool manager also acts as a staking contract for liquidity mining. Users can use their NFT positions to subscribe to several incentives with their NFT positions.</p>
+<h2 id="key-state-variables">Key state variables<a class="headerlink" href="#key-state-variables" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Concentrated liquidity pool</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>liquidity</td>
+<td>Current liquidity. Used to calculate price impact.</td>
+</tr>
+<tr>
+<td>price</td>
+<td>Square root of the current price in terms of token1, multiplied by 2^96. Used to calculate price impact.</td>
+</tr>
+<tr>
+<td 0_1="0,1">feeGrowthGlobal</td>
+<td>Swap fee accumulator; fees are divided by the liquidity for the swap</td>
+</tr>
+<tr>
+<td>nearestTick</td>
+<td>Pointer to the tick that is just below the current price.</td>
+</tr>
+<tr>
+<td 0_1="0,1">reserve</td>
+<td>BentoBox share balance of the pool for token0 and token1.</td>
+</tr>
+<tr>
+<td>ticks</td>
+<td>(int24 =&gt; Tick) mapping for the linked list. Used to update current liquidity when crossing ticks.</td>
+</tr>
+<tr>
+<td>positions</td>
+<td>(address =&gt; (int24 =&gt; (int24 =&gt; Position))) mapping. Used to keep track of a user&rsquo;s liquidity position.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="staking">Staking<a class="headerlink" href="#staking" title="Permanent link"></a></h2>
+<p>Projects can provide incentives on any concentrated liquidity pair. Incentives are set from a specific start time to a specific end time with a flat reward amount. Liquidity providers are rewarded proportional to their liquidity, but only for the duration when price was trading within their range.</p>
+<p>We use the same approach as with calculating fees belonging to a position.</p>
+<p>The pool keeps track of a <code>secondsGrowthGlobal</code> accumulator which increases on every swap by the time between the last increase, divided by current liquidity <code>secondsGrowthGlobal += secondPassed / liquidity</code>.
+Each tick also keeps track of the <code>secondsGrowthOutside</code> snapshot which stores the growth that has happened on the side of the tick where trading currently isn&rsquo;t happening. It is updated each time the tick is crossed: <code>secondsGrowthOutside = secondsGrowthGlobal - secondsGrowthOutside</code>.</p>
+<p>Using the <code>secondsGrowthGlobal</code> and the <code>secondsGrowthOutside</code> counter of a tick we can calculate the current growth that has happened above or below any specific tick.
+By subtracting the &ldquo;growth below&rdquo; of the lower tick and the &ldquo;growth above&rdquo; of the upper tick from <code>secondsGrowthGlobal</code> we get the growth for a position. When a user wants to stake a snapshot of this value is taken (<code>secondsGrowthInsideLast</code>).</p>
+<p>After some time passes we can calculate the rewards belonging to a position by computing the new <code>secondsGrowthInsideLast</code> value and calculating the difference from the old value. Multiplying this difference by the position&rsquo;s liquidity gives us an abstract amount in seconds, that will be less than or equal to the time a user has been staked for (e.g. staking duration is 1000 seconds, but the position&rsquo;s seconds value we calculate is 100). We can think of this value as the amount of time trading has relied solely on this position. By dividing the position&rsquo;s time by the total passed time we can compute the ratio of rewards that should be credited to the position (in the example it would be 10% of rewards).</p>
+<h2 id="formulas">Formulas<a class="headerlink" href="#formulas" title="Permanent link"></a></h2>
+<p>Calculating price impact:</p>
 <ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>/</code></li>
+<li>Δ√𝑃 = Δy / L</li>
+<li>Δ(1/√𝑃) = Δx / L</li>
 </ul>
-<h2 id="bar">bar<a class="headerlink" href="#bar" title="Permanent link"></a></h2>
+<blockquote>
+<p>Where x is token0 and y is token1</p>
+</blockquote>
+<p>Calculating liquidity:</p>
 <ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>/</code></li>
+<li>L = Δy / Δ√𝑃</li>
+<li>L = Δx / (1/Δ√𝑃)</li>
 </ul>
+<p>Calculating amounts:</p>
+<blockquote>
+<p>E.g. calculating user&rsquo;s token0 and token1 amounts when burning liquidity based on their lower and upper range price and their liquidity amount.</p>
+</blockquote>
+<ul>
+<li>Δx = Δ(1/√𝑃) · L</li>
+</ul>
+<blockquote>
+<p>Where √𝑃 is derrived from the price span that is above the current price.</p>
+</blockquote>
+<ul>
+<li>Δy = Δ(√𝑃) · L</li>
+</ul>
+<blockquote>
+<p>Where √𝑃 is derrived from the price span that is below the current price.</p>
+</blockquote>
 
               
                 
